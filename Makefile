@@ -1,6 +1,7 @@
 OFILES = main.o
 
-all:
+launch:tie
+	./chess
 
 tie:$(OFILES)
 	g++ $(OFILES) -o chess

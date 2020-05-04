@@ -51,86 +51,151 @@ std::string make_filed(std::string field[9][9])
 
                         <body>
                         <table class="chessboard">
-                            <caption>)"+ field[0][0] + R"(</caption>
+                            <caption>)"
+            + field[0][0] + R"(</caption>
                             <tr>
-                            <td>)"+ field[1][1] + R"(</td>
-                            <td>)"+ field[1][2] + R"(</td>
-                            <td>)"+ field[1][3] + R"(</td>
-                            <td>)"+ field[1][4] + R"(</td>
-                            <td>)"+ field[1][5] + R"(</td>
-                            <td>)"+ field[1][6] + R"(</td>
-                            <td>)"+ field[1][7] + R"(</td>
-                            <td>)"+ field[1][8] + R"(</td>
+                            <td>)"
+            + field[1][1] + R"(</td>
+                            <td>)"
+            + field[1][2] + R"(</td>
+                            <td>)"
+            + field[1][3] + R"(</td>
+                            <td>)"
+            + field[1][4] + R"(</td>
+                            <td>)"
+            + field[1][5] + R"(</td>
+                            <td>)"
+            + field[1][6] + R"(</td>
+                            <td>)"
+            + field[1][7] + R"(</td>
+                            <td>)"
+            + field[1][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[2][1] + R"(</td>
-                            <td>)"+ field[2][2] + R"(</td>
-                            <td>)"+ field[2][3] + R"(</td>
-                            <td>)"+ field[2][4] + R"(</td>
-                            <td>)"+ field[2][5] + R"(</td>
-                            <td>)"+ field[2][6] + R"(</td>
-                            <td>)"+ field[2][7] + R"(</td>
-                            <td>)"+ field[2][8] + R"(</td>
+                            <td>)"
+            + field[2][1] + R"(</td>
+                            <td>)"
+            + field[2][2] + R"(</td>
+                            <td>)"
+            + field[2][3] + R"(</td>
+                            <td>)"
+            + field[2][4] + R"(</td>
+                            <td>)"
+            + field[2][5] + R"(</td>
+                            <td>)"
+            + field[2][6] + R"(</td>
+                            <td>)"
+            + field[2][7] + R"(</td>
+                            <td>)"
+            + field[2][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[3][1] + R"(</td>
-                            <td>)"+ field[3][2] + R"(</td>
-                            <td>)"+ field[3][3] + R"(</td>
-                            <td>)"+ field[3][4] + R"(</td>
-                            <td>)"+ field[3][5] + R"(</td>
-                            <td>)"+ field[3][6] + R"(</td>
-                            <td>)"+ field[3][7] + R"(</td>
-                            <td>)"+ field[3][8] + R"(</td>
+                            <td>)"
+            + field[3][1] + R"(</td>
+                            <td>)"
+            + field[3][2] + R"(</td>
+                            <td>)"
+            + field[3][3] + R"(</td>
+                            <td>)"
+            + field[3][4] + R"(</td>
+                            <td>)"
+            + field[3][5] + R"(</td>
+                            <td>)"
+            + field[3][6] + R"(</td>
+                            <td>)"
+            + field[3][7] + R"(</td>
+                            <td>)"
+            + field[3][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[4][1] + R"(</td>
-                            <td>)"+ field[4][2] + R"(</td>
-                            <td>)"+ field[4][3] + R"(</td>
-                            <td>)"+ field[4][4] + R"(</td>
-                            <td>)"+ field[4][5] + R"(</td>
-                            <td>)"+ field[4][6] + R"(</td>
-                            <td>)"+ field[4][7] + R"(</td>
-                            <td>)"+ field[4][8] + R"(</td>
+                            <td>)"
+            + field[4][1] + R"(</td>
+                            <td>)"
+            + field[4][2] + R"(</td>
+                            <td>)"
+            + field[4][3] + R"(</td>
+                            <td>)"
+            + field[4][4] + R"(</td>
+                            <td>)"
+            + field[4][5] + R"(</td>
+                            <td>)"
+            + field[4][6] + R"(</td>
+                            <td>)"
+            + field[4][7] + R"(</td>
+                            <td>)"
+            + field[4][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[5][1] + R"(</td>
-                            <td>)"+ field[5][2] + R"(</td>
-                            <td>)"+ field[5][3] + R"(</td>
-                            <td>)"+ field[5][4] + R"(</td>
-                            <td>)"+ field[5][5] + R"(</td>
-                            <td>)"+ field[5][6] + R"(</td>
-                            <td>)"+ field[5][7] + R"(</td>
-                            <td>)"+ field[5][8] + R"(</td>
+                            <td>)"
+            + field[5][1] + R"(</td>
+                            <td>)"
+            + field[5][2] + R"(</td>
+                            <td>)"
+            + field[5][3] + R"(</td>
+                            <td>)"
+            + field[5][4] + R"(</td>
+                            <td>)"
+            + field[5][5] + R"(</td>
+                            <td>)"
+            + field[5][6] + R"(</td>
+                            <td>)"
+            + field[5][7] + R"(</td>
+                            <td>)"
+            + field[5][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[6][1] + R"(</td>
-                            <td>)"+ field[6][2] + R"(</td>
-                            <td>)"+ field[6][3] + R"(</td>
-                            <td>)"+ field[6][4] + R"(</td>
-                            <td>)"+ field[6][5] + R"(</td>
-                            <td>)"+ field[6][6] + R"(</td>
-                            <td>)"+ field[6][7] + R"(</td>
-                            <td>)"+ field[6][8] + R"(</td>
+                            <td>)"
+            + field[6][1] + R"(</td>
+                            <td>)"
+            + field[6][2] + R"(</td>
+                            <td>)"
+            + field[6][3] + R"(</td>
+                            <td>)"
+            + field[6][4] + R"(</td>
+                            <td>)"
+            + field[6][5] + R"(</td>
+                            <td>)"
+            + field[6][6] + R"(</td>
+                            <td>)"
+            + field[6][7] + R"(</td>
+                            <td>)"
+            + field[6][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[7][1] + R"(</td>
-                            <td>)"+ field[7][2] + R"(</td>
-                            <td>)"+ field[7][3] + R"(</td>
-                            <td>)"+ field[7][4] + R"(</td>
-                            <td>)"+ field[7][5] + R"(</td>
-                            <td>)"+ field[7][6] + R"(</td>
-                            <td>)"+ field[7][7] + R"(</td>
-                            <td>)"+ field[7][8] + R"(</td>
+                            <td>)"
+            + field[7][1] + R"(</td>
+                            <td>)"
+            + field[7][2] + R"(</td>
+                            <td>)"
+            + field[7][3] + R"(</td>
+                            <td>)"
+            + field[7][4] + R"(</td>
+                            <td>)"
+            + field[7][5] + R"(</td>
+                            <td>)"
+            + field[7][6] + R"(</td>
+                            <td>)"
+            + field[7][7] + R"(</td>
+                            <td>)"
+            + field[7][8] + R"(</td>
                             </tr>
                             <tr>
-                            <td>)"+ field[8][1] + R"(</td>
-                            <td>)"+ field[8][2] + R"(</td>
-                            <td>)"+ field[8][3] + R"(</td>
-                            <td>)"+ field[8][4] + R"(</td>
-                            <td>)"+ field[8][5] + R"(</td>
-                            <td>)"+ field[8][6] + R"(</td>
-                            <td>)"+ field[8][7] + R"(</td>
-                            <td>)"+ field[8][8] + R"(</td>
+                            <td>)"
+            + field[8][1] + R"(</td>
+                            <td>)"
+            + field[8][2] + R"(</td>
+                            <td>)"
+            + field[8][3] + R"(</td>
+                            <td>)"
+            + field[8][4] + R"(</td>
+                            <td>)"
+            + field[8][5] + R"(</td>
+                            <td>)"
+            + field[8][6] + R"(</td>
+                            <td>)"
+            + field[8][7] + R"(</td>
+                            <td>)"
+            + field[8][8] + R"(</td>
                             </tr>
                         </table>
                         </body>

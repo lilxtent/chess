@@ -15,4 +15,5 @@ int main(int argc, char* argv[])
 
     system("xdg-open chess_html.html");
 
+    return 0;
 }

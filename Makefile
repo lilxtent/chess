@@ -5,7 +5,7 @@ DIR = build
 DIR2 = bin
 F = -o
 
-all:
+all:src/*
 	$(CC) $(F) $(DIR)/main.o $(CFLAGS) src/main.cpp
 	$(CC) $(DIR)/*.o -o $(DIR2)/$(OUT)
 

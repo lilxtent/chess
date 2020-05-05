@@ -55,111 +55,21 @@ std::string make_filed(std::string field[9][9])
             + field[0][0] + R"(</caption>
                             <tr>
                             <td>)"
-            + field[1][1] + R"(</td>
+            + field[8][1] + R"(</td>
                             <td>)"
-            + field[1][2] + R"(</td>
+            + field[8][2] + R"(</td>
                             <td>)"
-            + field[1][3] + R"(</td>
+            + field[8][3] + R"(</td>
                             <td>)"
-            + field[1][4] + R"(</td>
+            + field[8][4] + R"(</td>
                             <td>)"
-            + field[1][5] + R"(</td>
+            + field[8][5] + R"(</td>
                             <td>)"
-            + field[1][6] + R"(</td>
+            + field[8][6] + R"(</td>
                             <td>)"
-            + field[1][7] + R"(</td>
+            + field[8][7] + R"(</td>
                             <td>)"
-            + field[1][8] + R"(</td>
-                            </tr>
-                            <tr>
-                            <td>)"
-            + field[2][1] + R"(</td>
-                            <td>)"
-            + field[2][2] + R"(</td>
-                            <td>)"
-            + field[2][3] + R"(</td>
-                            <td>)"
-            + field[2][4] + R"(</td>
-                            <td>)"
-            + field[2][5] + R"(</td>
-                            <td>)"
-            + field[2][6] + R"(</td>
-                            <td>)"
-            + field[2][7] + R"(</td>
-                            <td>)"
-            + field[2][8] + R"(</td>
-                            </tr>
-                            <tr>
-                            <td>)"
-            + field[3][1] + R"(</td>
-                            <td>)"
-            + field[3][2] + R"(</td>
-                            <td>)"
-            + field[3][3] + R"(</td>
-                            <td>)"
-            + field[3][4] + R"(</td>
-                            <td>)"
-            + field[3][5] + R"(</td>
-                            <td>)"
-            + field[3][6] + R"(</td>
-                            <td>)"
-            + field[3][7] + R"(</td>
-                            <td>)"
-            + field[3][8] + R"(</td>
-                            </tr>
-                            <tr>
-                            <td>)"
-            + field[4][1] + R"(</td>
-                            <td>)"
-            + field[4][2] + R"(</td>
-                            <td>)"
-            + field[4][3] + R"(</td>
-                            <td>)"
-            + field[4][4] + R"(</td>
-                            <td>)"
-            + field[4][5] + R"(</td>
-                            <td>)"
-            + field[4][6] + R"(</td>
-                            <td>)"
-            + field[4][7] + R"(</td>
-                            <td>)"
-            + field[4][8] + R"(</td>
-                            </tr>
-                            <tr>
-                            <td>)"
-            + field[5][1] + R"(</td>
-                            <td>)"
-            + field[5][2] + R"(</td>
-                            <td>)"
-            + field[5][3] + R"(</td>
-                            <td>)"
-            + field[5][4] + R"(</td>
-                            <td>)"
-            + field[5][5] + R"(</td>
-                            <td>)"
-            + field[5][6] + R"(</td>
-                            <td>)"
-            + field[5][7] + R"(</td>
-                            <td>)"
-            + field[5][8] + R"(</td>
-                            </tr>
-                            <tr>
-                            <td>)"
-            + field[6][1] + R"(</td>
-                            <td>)"
-            + field[6][2] + R"(</td>
-                            <td>)"
-            + field[6][3] + R"(</td>
-                            <td>)"
-            + field[6][4] + R"(</td>
-                            <td>)"
-            + field[6][5] + R"(</td>
-                            <td>)"
-            + field[6][6] + R"(</td>
-                            <td>)"
-            + field[6][7] + R"(</td>
-                            <td>)"
-            + field[6][8] + R"(</td>
+            + field[8][8] + R"(</td>
                             </tr>
                             <tr>
                             <td>)"
@@ -181,21 +91,111 @@ std::string make_filed(std::string field[9][9])
                             </tr>
                             <tr>
                             <td>)"
-            + field[8][1] + R"(</td>
+            + field[6][1] + R"(</td>
                             <td>)"
-            + field[8][2] + R"(</td>
+            + field[6][2] + R"(</td>
                             <td>)"
-            + field[8][3] + R"(</td>
+            + field[6][3] + R"(</td>
                             <td>)"
-            + field[8][4] + R"(</td>
+            + field[6][4] + R"(</td>
                             <td>)"
-            + field[8][5] + R"(</td>
+            + field[6][5] + R"(</td>
                             <td>)"
-            + field[8][6] + R"(</td>
+            + field[6][6] + R"(</td>
                             <td>)"
-            + field[8][7] + R"(</td>
+            + field[6][7] + R"(</td>
                             <td>)"
-            + field[8][8] + R"(</td>
+            + field[6][8] + R"(</td>
+                            </tr>
+                            <tr>
+                            <td>)"
+            + field[5][1] + R"(</td>
+                            <td>)"
+            + field[5][2] + R"(</td>
+                            <td>)"
+            + field[5][3] + R"(</td>
+                            <td>)"
+            + field[5][4] + R"(</td>
+                            <td>)"
+            + field[5][5] + R"(</td>
+                            <td>)"
+            + field[5][6] + R"(</td>
+                            <td>)"
+            + field[5][7] + R"(</td>
+                            <td>)"
+            + field[5][8] + R"(</td>
+                            </tr>
+                            <tr>
+                            <td>)"
+            + field[4][1] + R"(</td>
+                            <td>)"
+            + field[4][2] + R"(</td>
+                            <td>)"
+            + field[4][3] + R"(</td>
+                            <td>)"
+            + field[4][4] + R"(</td>
+                            <td>)"
+            + field[4][5] + R"(</td>
+                            <td>)"
+            + field[4][6] + R"(</td>
+                            <td>)"
+            + field[4][7] + R"(</td>
+                            <td>)"
+            + field[4][8] + R"(</td>
+                            </tr>
+                            <tr>
+                            <td>)"
+            + field[3][1] + R"(</td>
+                            <td>)"
+            + field[3][2] + R"(</td>
+                            <td>)"
+            + field[3][3] + R"(</td>
+                            <td>)"
+            + field[3][4] + R"(</td>
+                            <td>)"
+            + field[3][5] + R"(</td>
+                            <td>)"
+            + field[3][6] + R"(</td>
+                            <td>)"
+            + field[3][7] + R"(</td>
+                            <td>)"
+            + field[3][8] + R"(</td>
+                            </tr>
+                            <tr>
+                            <td>)"
+            + field[2][1] + R"(</td>
+                            <td>)"
+            + field[2][2] + R"(</td>
+                            <td>)"
+            + field[2][3] + R"(</td>
+                            <td>)"
+            + field[2][4] + R"(</td>
+                            <td>)"
+            + field[2][5] + R"(</td>
+                            <td>)"
+            + field[2][6] + R"(</td>
+                            <td>)"
+            + field[2][7] + R"(</td>
+                            <td>)"
+            + field[2][8] + R"(</td>
+                            </tr>
+                            <tr>
+                            <td>)"
+            + field[1][1] + R"(</td>
+                            <td>)"
+            + field[1][2] + R"(</td>
+                            <td>)"
+            + field[1][3] + R"(</td>
+                            <td>)"
+            + field[1][4] + R"(</td>
+                            <td>)"
+            + field[1][5] + R"(</td>
+                            <td>)"
+            + field[1][6] + R"(</td>
+                            <td>)"
+            + field[1][7] + R"(</td>
+                            <td>)"
+            + field[1][8] + R"(</td>
                             </tr>
                         </table>
                         </body>
@@ -258,11 +258,15 @@ void make_html_game(std::string file_name)
     }
 
     std::string move = "";
+    std::string move_num = "";
 
     do {
         game_rec >> move;
 
-        if (move[move.size() - 1] != '.' && move != " ") {
+        if (move[move.size() - 1] == '.') {
+            move_num = move;
+            move_num += " ";
+        } else if (move != " ") {
             if (move[move.size() - 1] == '#') {
                 game_rec.close();
 
@@ -272,6 +276,8 @@ void make_html_game(std::string file_name)
                     move += buff[i];
                 }
             }
+
+            field[0][0] = move_num + move;
 
             letters_to_nums(move[move.size() - 5]);
             letters_to_nums(move[move.size() - 2]);

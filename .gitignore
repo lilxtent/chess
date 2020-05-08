@@ -2,3 +2,4 @@
 *.vscode
 chess
 *.html
+bin/*.txt

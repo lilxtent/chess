@@ -46,7 +46,7 @@ std::string field[9][9] = {{""},
                             "<span class=\"black knight\"></span>",
                             "<span class=\"black rook\"></span>"}};
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     std::string file_name = "";
     file_name = argv[1];

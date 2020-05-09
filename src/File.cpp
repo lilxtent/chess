@@ -6,7 +6,7 @@ File::File()
 {
 }
 
-void File::make_html(std::string format_html, std::string path)
+void File::add_to_html(std::string format_html, std::string path)
 {
     std::ofstream file;
     file.open(path, std::ios::out | std::ios::app);
@@ -24,7 +24,7 @@ void File::make_html(std::string format_html, std::string path)
 void File::to_html(std::string file_name)
 {
     Field game_field;
-    make_html(game_field.make());
+    add_to_html(game_field.make_html_head());
 
     std::ifstream game_rec;
     game_rec.open(file_name, std::ios::out);
@@ -83,8 +83,10 @@ void File::to_html(std::string file_name)
             // field[y1][x1] = "";
             game_field.move(x1, y1, x2, y2);
 
-            make_html(game_field.make());
+            add_to_html(game_field.make_html_board());
         }
 
     } while (game_rec.is_open());
+
+    add_to_html(game_field.close_html_code());
 }

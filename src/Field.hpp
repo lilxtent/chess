@@ -49,7 +49,11 @@ public:
 
     Field();
 
-    std::string make();
+    std::string make_html_head();
+
+    std::string make_html_board();
+
+    std::string close_html_code();
 
     void set_move_name(std::string name);
 

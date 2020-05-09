@@ -23,9 +23,6 @@ void File::add_to_html(std::string format_html, std::string path)
 
 void File::to_html(std::string file_name)
 {
-    Field game_field;
-    add_to_html(game_field.make_html_head());
-
     std::ifstream game_rec;
     game_rec.open(file_name, std::ios::out);
 
@@ -33,6 +30,9 @@ void File::to_html(std::string file_name)
         std::cout << "No such file" << std::endl;
         return;
     }
+
+    Field game_field;
+    add_to_html(game_field.make_html_head());
 
     std::string move = "";
     std::string move_num = "";

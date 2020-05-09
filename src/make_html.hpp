@@ -292,7 +292,13 @@ void make_html_game(std::string file_name)
             x2 -= 48;
             y2 -= 48;
 
-            std::cout << x1 << " " << y1 << " " << x2 << " " << y2 << std::endl;
+            //Проверка на границы хода
+            if ((x1 > 8 || x1 < 1) || (x2 > 8 || x2 < 1) || (y1 > 8 || y1 < 1)
+                || (y2 > 8 || y2 < 1)) {
+                std::cout << "Wrong move: out of field" << std::endl;
+                game_rec.close();
+                return;
+            }
 
             field[y2][x2] = field[y1][x1];
             field[y1][x1] = "";

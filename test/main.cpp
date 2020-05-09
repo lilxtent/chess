@@ -76,3 +76,196 @@ table.chessboard .black.pawn:before   { content: "\265F"; }
 </html>
     )");
 }
+
+// Field::move
+TEST_CASE("Figures moevs correctly")
+{
+    Field field;
+
+    field.move(1, 2, 1, 3);
+
+    REQUIRE(field.field[3][1] == R"(<span class="white pawn"></span>)");
+    REQUIRE(field.field[2][1] == "");
+}
+
+// Field::make_html_board
+TEST_CASE("HTML field generates correctly")
+{
+    Field field;
+
+    REQUIRE(field.make_html_board() == R"(
+<body>
+<table class="chessboard">
+    <caption></caption>
+    <tr>
+    <td><span class="black rook"></span></td>
+    <td><span class="black knight"></span></td>
+    <td><span class="black bishop"></span></td>
+    <td><span class="black queen"></span></td>
+    <td><span class="black king"></span></td>
+    <td><span class="black bishop"></span></td>
+    <td><span class="black knight"></span></td>
+    <td><span class="black rook"></span></td>
+    </tr>
+    <tr>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    </tr>
+    <tr>
+    <td><span class="white rook"></span></td>
+    <td><span class="white knight"></span></td>
+    <td><span class="white bishop"></span></td>
+    <td><span class="white queen"></span></td>
+    <td><span class="white king"></span></td>
+    <td><span class="white bishop"></span></td>
+    <td><span class="white knight"></span></td>
+    <td><span class="white rook"></span></td>
+    </tr>
+</table>
+</body>)");
+
+    field.move(1, 2, 1, 3);
+    // Tests if Field::make_html_board works in correct ordinats
+    REQUIRE(field.make_html_board() == R"(
+<body>
+<table class="chessboard">
+    <caption></caption>
+    <tr>
+    <td><span class="black rook"></span></td>
+    <td><span class="black knight"></span></td>
+    <td><span class="black bishop"></span></td>
+    <td><span class="black queen"></span></td>
+    <td><span class="black king"></span></td>
+    <td><span class="black bishop"></span></td>
+    <td><span class="black knight"></span></td>
+    <td><span class="black rook"></span></td>
+    </tr>
+    <tr>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    <td><span class="black pawn"></span></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td><span class="white pawn"></span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr>
+    <td></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    <td><span class="white pawn"></span></td>
+    </tr>
+    <tr>
+    <td><span class="white rook"></span></td>
+    <td><span class="white knight"></span></td>
+    <td><span class="white bishop"></span></td>
+    <td><span class="white queen"></span></td>
+    <td><span class="white king"></span></td>
+    <td><span class="white bishop"></span></td>
+    <td><span class="white knight"></span></td>
+    <td><span class="white rook"></span></td>
+    </tr>
+</table>
+</body>)");
+}

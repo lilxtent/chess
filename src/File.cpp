@@ -21,10 +21,10 @@ void File::make_html(std::string format_html, std::string path)
     file.close();
 }
 
-void File::make_html_game(std::string file_name)
+void File::to_html(std::string file_name)
 {
     Field game_field;
-    make_html(game_field.make_filed());
+    make_html(game_field.make());
 
     std::ifstream game_rec;
     game_rec.open(file_name, std::ios::out);
@@ -83,7 +83,7 @@ void File::make_html_game(std::string file_name)
             // field[y1][x1] = "";
             game_field.move(x1, y1, x2, y2);
 
-            make_html(game_field.make_filed());
+            make_html(game_field.make());
         }
 
     } while (game_rec.is_open());

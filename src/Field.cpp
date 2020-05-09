@@ -5,7 +5,7 @@ Field::Field()
 {
 }
 
-std::string Field::make_filed()
+std::string Field::make()
 {
     std::string buff = R"(                        <!DOCTYPE html>
                         <html>

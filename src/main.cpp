@@ -8,6 +8,6 @@
 int main(int argc, char* argv[])
 {
     File game_rec;
-    game_rec.make_html_game(argv[1]);
+    game_rec.to_html(argv[1]);
     return 0;
 }

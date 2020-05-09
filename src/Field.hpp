@@ -50,7 +50,7 @@ public:
 
     Field();
 
-    std::string make_filed();
+    std::string make();
 
     void set_move_name(std::string name);
 

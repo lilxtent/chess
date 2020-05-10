@@ -323,7 +323,7 @@ TEST_CASE("HTML generates correctly")
     remove("chess_html.html");
     File file;
 
-    file.to_html("game_record_for_test.txt");
+    file.to_html("../test/game_record_for_test.txt");
 
     std::ifstream read_file;
     read_file.open("chess_html.html", std::ios::out);

@@ -269,3 +269,17 @@ TEST_CASE("HTML field generates correctly")
 </table>
 </body>)");
 }
+
+// Field::set_move_name
+TEST_CASE("Move name setter works")
+{
+    Field field;
+
+    field.set_move_name("TEST1");
+
+    REQUIRE(field.field[0][0] == "TEST1");
+
+    field.set_move_name("TEST2");
+
+    REQUIRE(field.field[0][0] == "TEST2");
+}

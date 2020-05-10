@@ -315,6 +315,7 @@ TEXT FOR TEST
         abc
 OG og
 )");
+    remove("test.txt");
 }
 
 // File::to_html
@@ -980,4 +981,6 @@ table.chessboard .black.pawn:before   { content: "\265F"; }
 </html>
     
 )");
+
+    remove("chess_html.html");
 }

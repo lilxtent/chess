@@ -283,3 +283,37 @@ TEST_CASE("Move name setter works")
 
     REQUIRE(field.field[0][0] == "TEST2");
 }
+
+// File::add_to_html
+TEST_CASE("Text adds to html file correctly")
+{
+    File file;
+
+    file.add_to_html(
+            R"(
+TEXT FOR TEST
+    TEST ABC
+        abc
+OG og)",
+            "test.txt");
+
+    std::ifstream read_file;
+    read_file.open("test.txt", std::ios::out);
+
+    std::string file_text = "";
+    std::string buff = "";
+
+    while (getline(read_file, buff)) {
+        file_text += buff;
+        file_text += "\n";
+    }
+
+    REQUIRE(file_text == R"(
+TEXT FOR TEST
+    TEST ABC
+        abc
+OG og
+)");
+
+    remove("test.txt");
+}

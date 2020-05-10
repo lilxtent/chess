@@ -5,3 +5,4 @@ chess
 bin/*.txt
 pusk
 test/*.txt
+bin/chess-tests

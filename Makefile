@@ -16,5 +16,8 @@ compile:
 tie:compile
 	$(CC) $(DIR)/*.o -o $(DIR2)/$(OUT)
 
+tests:
+	g++ -Wall -Werror test/main.cpp -o $(DIR2)/chess-tests
+
 clean:
 	rm $(DIR2)/$(OUT) $(DIR)/*.o

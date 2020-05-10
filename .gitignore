@@ -4,3 +4,4 @@ chess
 *.html
 bin/*.txt
 pusk
+test/*.txt

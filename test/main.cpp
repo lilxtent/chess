@@ -287,6 +287,7 @@ TEST_CASE("Move name setter works")
 // File::add_to_html
 TEST_CASE("Text adds to html file correctly")
 {
+    remove("test.txt");
     File file;
 
     file.add_to_html(
@@ -314,8 +315,6 @@ TEXT FOR TEST
         abc
 OG og
 )");
-
-    remove("test.txt");
 }
 
 // File::to_html

@@ -10,7 +10,7 @@ script:
   - make
   - make tests
   - cd bin/
-  - ./bin/chess-tests
+  - ./chess-tests
 
 compiler:
   -g++

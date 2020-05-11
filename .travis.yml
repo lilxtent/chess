@@ -9,6 +9,7 @@ script:
   - git ls-files src/ | xargs clang-format -i && git diff --exit-code
   - make
   - make tests
+  - cd bin/
   - ./bin/chess-tests
 
 compiler:

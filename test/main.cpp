@@ -321,7 +321,7 @@ OG og
 // File::to_html
 TEST_CASE("HTML generates correctly")
 {
-    remove("chess_html.html");
+    // remove("chess_html.html");
     File file;
 
     file.to_html("../test/game_record_for_test.txt");

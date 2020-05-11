@@ -4,17 +4,16 @@ F = -o
 OUT = chess
 DIR = build
 DIR2 = bin
+FILESCPP = $(wildcard src/*.cpp)
+OBJECTS = $(FILESCPP:.cpp=.o)
 
-all:tie
+all: $(FILESCPP) $(OUT)
 
-compile:
-	$(CC) $(F) $(DIR)/main.o $(CFLAGS) src/main.cpp
-	$(CC) $(F) $(DIR)/File.o $(CFLAGS) src/File.cpp
-	$(CC) $(F) $(DIR)/Field.o $(CFLAGS) src/Field.cpp
-	$(CC) $(F) $(DIR)/Converter.o $(CFLAGS) src/Converter.cpp
+$(OUT): $(OBJECTS)
+	$(CC) $(subst src/,build/,$(OBJECTS)) -o bin/$@ #компилит в bin
 
-tie:compile
-	$(CC) $(DIR)/*.o -o $(DIR2)/$(OUT)
+%.o: %.cpp
+	$(CC) $(CFLAGS) $< -o $(subst src/,build/,$@)
 
 tests:
 	g++ -std=c++11 -Wall -Werror test/main.cpp -o $(DIR2)/chess-tests

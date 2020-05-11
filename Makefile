@@ -1,11 +1,10 @@
 CC = g++ -std=c++11
 CFLAGS = -Wall -Werror -c
-F = -o
 OUT = chess
 DIR = build
 DIR2 = bin
 FILESCPP = $(wildcard src/*.cpp)
-OBJECTS = $(FILESCPP:.cpp=.o)
+OBJECTS = $(subst .cpp,.o,$(FILESCPP))
 
 all: $(FILESCPP) $(OUT)
 

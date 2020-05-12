@@ -11,7 +11,7 @@ all: $(FILESCPP) $(OUT)
 $(OUT): $(OBJECTS)
 	$(CC) $(subst src/,build/,$(OBJECTS)) -o bin/$@ #компилит в bin
 
-%.o: %.cpp
+%.o: %.cpp $(if %.cpp==main.cpp,$(main.cpp),$(%.hpp))
 	$(CC) $(CFLAGS) $< -o $(subst src/,build/,$@)
 
 tests:

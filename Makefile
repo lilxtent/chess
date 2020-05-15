@@ -1,19 +1,23 @@
 CC = g++ -std=c++11
-CFLAGS = -Wall -Werror -c
-OUT = chess
+CFLAGS = -Wall -Werror -MP -MMD -c
+PROG = chess
 DIR = build
 DIR2 = bin
 FILESCPP = $(wildcard src/*.cpp)
 OBJECTS = $(subst .cpp,.o,$(FILESCPP))
 
-all: $(FILESCPP) $(OUT)
+all: $(FILESCPP) $(PROG)
 
-$(OUT): $(OBJECTS)
-	$(CC) $(subst src/,build/,$(OBJECTS)) -o bin/$@ #компилит в bin
 
-%.o: %.cpp $(if %.cpp==main.cpp,$(main.cpp),$(%.hpp))
-	$(CC) $(CFLAGS) $< -o $(subst src/,build/,$@)
+$(PROG): $(subst src/,build/,$(OBJECTS))
+	$(CC) $(subst src/,build/,$^) -o bin/$@
 
+build/%.o: src/%.cpp
+	$(CC) $(CFLAGS) $< -o $@
+
+-include build/*.d
+
+#компилирует тесты
 tests:
 	g++ -std=c++11 -Wall -Werror test/main.cpp -o $(DIR2)/chess-tests
 
